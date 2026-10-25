@@ -1,49 +1,58 @@
 <!doctype html>
 <html lang="sv">
+
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KGN2X7C9');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f3f0e9">
-  <meta name="description" content="Isabel Eriksson – Digital Marketing Specialist-student med intresse för influencer marketing, sociala medier och mode.">
+  <meta name="theme-color" content="#eeece7">
+  <meta name="description"
+    content="Isabel Eriksson – Digital Marketing Specialist-student med intresse för influencer marketing, sociala medier och mode. Söker praktik våren 2027.">
   <title>Isabel Eriksson — Digital Marketing Specialist</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGN2X7C9" title="Google Tag Manager" height="0"
+      width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <header class="site-header">
-    <a class="wordmark" href="#hem" aria-label="Isabel Eriksson, till startsidan">IE<span>.</span></a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Öppna meny"><span></span><span></span></button>
+    <a class="wordmark" href="#hem" aria-label="Isabel Eriksson, startsidan">IE<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"
+      aria-label="Öppna meny"><span></span><span></span></button>
     <nav id="main-nav" aria-label="Huvudmeny">
       <a href="#om">Om mig</a>
-      <a href="#tjanster">Vad jag gör</a>
-      <a href="#projekt">Min bakgrund</a>
-      <a class="nav-contact" href="#kontakt">Säg hej <span>↗</span></a>
+      <a href="#fokus">Mitt fokus</a>
+      <a href="#erfarenhet">Erfarenhet</a>
+      <a class="nav-contact" href="#kontakt">Säg hej <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="hem">
+    <section class="hero" id="hem" aria-labelledby="hero-title">
+      <img class="hero-image" src="img/isabel-eriksson.jpg" alt="Isabel Eriksson sitter i en stol med sin dator"
+        fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-topline"><span>GÖTEBORG, SVERIGE</span><span>DIGITAL MARKETING SPECIALIST</span></div>
       <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> Isabel Eriksson · Digital Marketing Specialist-student i Göteborg</p>
-        <h1>Digitalt berättande<br>med <em>känsla för stil.</em></h1>
-        <p class="hero-intro">Jag heter Isabel — en nyfiken marknadsföringsstudent med hjärtat i sociala medier, influencer marketing och mode.</p>
-        <div class="hero-actions">
-          <a class="button button-dark" href="#kontakt">Låt oss höras <span>↗</span></a>
-          <a class="text-link" href="#om">Lär känna mig <span>↓</span></a>
-        </div>
-        <div class="hero-note"><span class="note-line"></span><span>Öppen för praktik<br><strong>Våren 2027</strong></span></div>
+        <p class="eyebrow"><span class="status-dot"></span> Öppen för praktik · våren 2027</p>
+        <a class="hero-link" href="#om">Lär känna mig <span aria-hidden="true">↓</span></a>
       </div>
-      <div class="hero-art" aria-label="Abstrakt redaktionell komposition i varma modeinspirerade färger" role="img">
-        <div class="art-top"><span>ISABEL ERIKSSON</span><span>GÖTEBORG · 2026</span></div>
-        <div class="art-sun"></div><div class="art-frame"></div>
-        <div class="art-figure"><div class="figure-head"></div><div class="figure-body"></div><div class="figure-leg leg-one"></div><div class="figure-leg leg-two"></div></div>
-        <div class="art-orbit"></div>
-        <div class="art-stamp">IDEAS<br>IN<br>MOTION</div>
-        <div class="art-bottom"><span>CREATIVE<br>BY NATURE</span><span class="art-star">✳</span></div>
-      </div>
+      <h1 class="hero-name" id="hero-title">ISABEL ERIKSSON</h1>
       <div class="hero-index"><span>01</span><i></i><span>04</span></div>
     </section>
 
@@ -53,45 +62,119 @@
         <p class="kicker">Kreativ. Nyfiken. Trendmedveten.</p>
         <h2>Jag gillar när <em>insikt</em><br>blir till idé.</h2>
         <div class="intro-bottom">
-          <p>Just nu utbildar jag mig till Digital Marketing Specialist på IHM Business School. Jag tycker om att förstå vad människor fastnar för — och skapa digital kommunikation som känns relevant, visuellt genomtänkt och värd att stanna vid.</p>
-          <a class="round-link" href="#projekt" aria-label="Läs om min bakgrund">↘</a>
+          <p>Jag studerar till Digital Marketing Specialist på IHM Business School och har ett särskilt intresse för
+            influencer marketing, sociala medier och mode. Jag tycker om att förstå vad människor fastnar för – och
+            skapa kommunikation som känns relevant, genomtänkt och värd att stanna vid.</p>
+          <a class="round-link" href="#fokus" aria-label="Läs om mitt fokus">↘</a>
         </div>
       </div>
     </section>
 
-    <section class="focus section-pad" id="tjanster">
-      <div class="section-label"><span>02 / VAD JAG GÖR</span><i></i></div>
-      <div class="focus-heading"><h2>Det här vill<br><em>jag utforska.</em></h2><p>Med ett särskilt intresse för mode och livsstil — och en utbildning som ger mig verktyg att göra idéer till genomtänkt marknadsföring.</p></div>
+    <section class="focus section-pad" id="fokus">
+      <div class="section-label"><span>02 / MITT FOKUS</span><i></i></div>
+      <div class="focus-heading">
+        <h2>Det här vill<br><em>jag utforska.</em></h2>
+        <p>Jag kombinerar en kreativ blick med ny kunskap inom digital marknadsföring – och vill fortsätta utvecklas
+          tillsammans med ett engagerat team.</p>
+      </div>
       <div class="focus-grid">
-        <article class="focus-card focus-card-red"><span class="card-number">01</span><span class="card-symbol">✳</span><h3>Influencer<br>marketing</h3><p>Samarbeten och innehåll där varumärke, kreatör och målgrupp möts på riktigt.</p><span class="card-tag">RELATIONER · RELEVANS</span></article>
-        <article class="focus-card focus-card-photo"><span class="card-number">02</span><span class="card-symbol">↗</span><h3>Sociala<br>medier</h3><p>Trender, tonalitet och idéer som hjälper ett varumärke att hitta sin röst.</p><span class="card-tag">INNEHÅLL · GEMENSKAP</span></article>
-        <article class="focus-card focus-card-cream"><span class="card-number">03</span><span class="card-symbol">◎</span><h3>Digital<br>marknadsföring</h3><p>En bred grund i SEO, paid media, content, tracking och digital analys.</p><span class="card-tag">STRATEGI · LÄRANDE</span></article>
+        <article class="focus-card focus-card-red"><span class="card-number">01</span><span class="card-symbol"
+            aria-hidden="true">✳</span>
+          <h3>Influencer<br>marketing</h3>
+          <p>Samarbeten och innehåll där varumärke, kreatör och målgrupp möts på riktigt.</p><span
+            class="card-tag">RELATIONER · RELEVANS</span>
+        </article>
+        <article class="focus-card focus-card-dark"><span class="card-number">02</span><span class="card-symbol"
+            aria-hidden="true">↗</span>
+          <h3>Sociala<br>medier</h3>
+          <p>Trender, tonalitet och idéer som hjälper ett varumärke att hitta sin röst.</p><span
+            class="card-tag">INNEHÅLL · GEMENSKAP</span>
+        </article>
+        <article class="focus-card focus-card-cream"><span class="card-number">03</span><span class="card-symbol"
+            aria-hidden="true">◎</span>
+          <h3>Digital<br>marknadsföring</h3>
+          <p>En bred grund i SEO, paid media, content, tracking och digital analys.</p><span class="card-tag">STRATEGI ·
+            LÄRANDE</span>
+        </article>
       </div>
     </section>
 
-    <section class="background section-pad" id="projekt">
-      <div class="section-label"><span>03 / MIN BAKGRUND</span><i></i></div>
+    <section class="background section-pad" id="erfarenhet">
+      <div class="section-label"><span>03 / ERFARENHET & UTBILDNING</span><i></i></div>
       <div class="background-layout">
-        <div><p class="kicker">En kombination av</p><h2>kommunikation,<br><em>form & människor.</em></h2><p class="background-copy">Min väg hit går via grafisk design och service. Jag tar med mig ett visuellt öga, vana att möta olika behov och ett lugn i miljöer där mycket händer.</p></div>
+        <div class="background-intro">
+          <p class="kicker">En kombination av</p>
+          <h2>kommunikation,<br><em>form & människor.</em></h2>
+          <p class="background-copy">Min väg hit går via grafisk design och service. Jag tar med mig ett visuellt öga,
+            vana att möta olika behov och ett lugn i miljöer där mycket händer.</p>
+        </div>
         <div class="timeline">
-          <article class="timeline-item"><span class="timeline-date">2026 — PÅGÅENDE</span><div><h3>Digital Marketing Specialist</h3><p>IHM Business School · Göteborg</p><small>Marknadsföring, SEO, paid media, content & influencer marketing, tracking och digital analys.</small></div></article>
-          <article class="timeline-item"><span class="timeline-date">2020 — 2023</span><div><h3>Grafisk design</h3><p>NTI Gymnasiet</p><small>Visuell kommunikation, målgrupp, färg, form och rebranding-projekt.</small></div></article>
-          <article class="timeline-item"><span class="timeline-date">2022 — NU</span><div><h3>Gothia Towers / Svenska Mässan</h3><p>Guest Service Agent · Inhouse Sales Agent</p><small>Kundupplevelse, service och struktur i en miljö med högt tempo.</small></div></article>
-          <article class="timeline-item"><span class="timeline-date">VINTERSÄSONGER<br>2023 — 2025</span><div><h3>TUI</h3><p>Flygvärdinna</p><small>Ansvar, säkerhet och omtanke om resenärer med olika behov.</small></div></article>
+          <article class="timeline-item"><span class="timeline-date">AUG 2026 — NU</span>
+            <div>
+              <h3>Studeranderepresentant i ledningsgruppen</h3>
+              <p>IHM Business School</p><small>Representerar de studerande och bidrar med studentperspektivet i
+                utbildningens ledningsgrupp.</small>
+            </div>
+          </article>
+          <article class="timeline-item"><span class="timeline-date">AUG 2026 — PÅGÅENDE</span>
+            <div>
+              <h3>Digital Marketing Specialist</h3>
+              <p>IHM Business School · Göteborg</p><small>Marknadsföring, AI och tech, SEO, paid media, content &
+                influencer marketing, tracking och digital analys.</small>
+            </div>
+          </article>
+          <article class="timeline-item"><span class="timeline-date">JUN 2025 — NU</span>
+            <div>
+              <h3>Inhouse Sales Agent</h3>
+              <p>Gothia Towers / Svenska Mässan</p><small>Arbetar i digitala system för bokning, kundhantering och
+                administration med fokus på service och kundupplevelse.</small>
+            </div>
+          </article>
+          <article class="timeline-item"><span class="timeline-date">MAJ 2022 — JUN 2025</span>
+            <div>
+              <h3>Guest Service Agent</h3>
+              <p>Gothia Towers / Svenska Mässan</p><small>Möten och kommunikation med människor med olika bakgrunder,
+                behov och förväntningar.</small>
+            </div>
+          </article>
+          <article class="timeline-item"><span class="timeline-date">APR — MAJ 2022</span>
+            <div>
+              <h3>Frukostvärd</h3>
+              <p>Gothia Towers</p><small>Service och omtanke om gäster under frukostserveringen.</small>
+            </div>
+          </article>
+          <article class="timeline-item"><span class="timeline-date">VINTERSÄSONGER<br>NOV 2023 — APR 2025</span>
+            <div>
+              <h3>Flygvärdinna</h3>
+              <p>TUI</p><small>Ansvar för säkerhet, service och kundupplevelse med resenärer med olika behov.</small>
+            </div>
+          </article>
+          <article class="timeline-item"><span class="timeline-date">AUG 2020 — JUN 2023</span>
+            <div>
+              <h3>Grafisk design</h3>
+              <p>NTI Gymnasiet</p><small>Visuell kommunikation, målgrupp, färg, form och rebranding-projekt.</small>
+            </div>
+          </article>
         </div>
       </div>
-      <div class="skills-strip"><span>Sociala medier & trender</span><i>✳</i><span>Målgruppsförståelse</span><i>✳</i><span>Svenska & engelska</span></div>
+      <div class="skills-strip"><span>Sociala medier & trender</span><i
+          aria-hidden="true">✳</i><span>Målgruppsförståelse</span><i aria-hidden="true">✳</i><span>Svenska &
+          engelska</span></div>
     </section>
 
     <section class="contact section-pad" id="kontakt">
       <div class="contact-top"><span>04 / KONTAKT</span><span>HAR DU EN IDÉ?</span></div>
-      <h2>Let’s make<br><em>something matter.</em></h2>
+      <h2>Låt oss<br><em>prata.</em></h2>
       <p>Jag söker praktik inför våren 2027 och är alltid nyfiken på nya möten och idéer.</p>
-      <a class="contact-email" href="mailto:isaeri220@ihmeducation.se">isaeri220@ihmeducation.se <span>↗</span></a>
-      <div class="contact-meta"><span>GÖTEBORG, SVERIGE</span><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a><a href="tel:+46725897245">+46 72 589 72 45</a></div>
+      <a class="contact-email" href="mailto:isaeri220@ihmeducation.se">isaeri220@ihmeducation.se <span
+          aria-hidden="true">↗</span></a>
+      <div class="contact-meta"><span>GÖTEBORG, SVERIGE</span><a href="https://www.linkedin.com/" target="_blank"
+          rel="noopener noreferrer">LINKEDIN · @ISABELERIKSSON ↗</a><a href="tel:+46725897245">+46 72 589 72 45</a>
+      </div>
     </section>
   </main>
 
-  <footer><a class="wordmark" href="#hem">IE<span>.</span></a><span>Digitalt berättande med känsla för stil.</span><span>© <span id="year">2026</span> Isabel Eriksson</span></footer>
+  <footer><a class="wordmark" href="#hem">IE<span>.</span></a><span>© <span id="year">2026</span> Isabel Eriksson</span></footer>
 </body>
+
 </html>

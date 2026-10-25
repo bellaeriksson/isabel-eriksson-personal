@@ -1,26 +1,21 @@
-const knapp = document.querySelector("#visa-mer");
-const mer = document.querySelector("#mer");
-mer.classList.add("gomd");
+const menuButton = document.querySelector(".menu-toggle");
+const navigation = document.querySelector("#main-nav");
 
-function visaMer() {
-    mer.classList.toggle("gomd");
-    if (mer.classList.contains("gomd")) {
-        knapp.textContent = "Visa mer";
-        knapp.setAttribute("aria-expanded", "false");
-    } else {
-        knapp.textContent = "Visa mindre";
-        knapp.setAttribute("aria-expanded", "true");
-    }
+if (menuButton && navigation) {
+  menuButton.addEventListener("click", () => {
+    const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+    menuButton.setAttribute("aria-expanded", String(!isOpen));
+    menuButton.setAttribute("aria-label", isOpen ? "Öppna meny" : "Stäng meny");
+    navigation.classList.toggle("is-open", !isOpen);
+  });
+
+  navigation.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Öppna meny");
+      navigation.classList.remove("is-open");
+    });
+  });
 }
 
-knapp.addEventListener("click", visaMer);
-
-// Bonus: kopiera mailadressen med ett klick
-const kopiera = document.querySelector("#kopiera");
-
-function kopieraMail() {
-    navigator.clipboard.writeText("alex.lind@example.com");
-    kopiera.textContent = "Kopierat!";
-}
-
-kopiera.addEventListener("click", kopieraMail);
+document.querySelector("#year").textContent = new Date().getFullYear();
